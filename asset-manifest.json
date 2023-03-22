@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/robot-factory/static/css/main.e1150b44.css",
+    "main.js": "/robot-factory/static/js/main.bf8571c1.js",
+    "static/js/787.d437d6c3.chunk.js": "/robot-factory/static/js/787.d437d6c3.chunk.js",
+    "static/media/track_icon.svg": "/robot-factory/static/media/track_icon.348011f04e94c72a7d1f1470e13f4393.svg",
+    "static/media/sentience_icon.svg": "/robot-factory/static/media/sentience_icon.184a9273fb2b96a44feaf0d5a679ef81.svg",
+    "static/media/wheel_icon.svg": "/robot-factory/static/media/wheel_icon.4c306926dc9898a5de35b6de5ee0e557.svg",
+    "static/media/shipment_icon.svg": "/robot-factory/static/media/shipment_icon.5e1090053714cf98d307dc8d167608c6.svg",
+    "static/media/rotor_icon.svg": "/robot-factory/static/media/rotor_icon.539683c0b88dff5c7ba68804a4f4e0c2.svg",
+    "static/media/remove_shipment_icon.svg": "/robot-factory/static/media/remove_shipment_icon.b8fcc69479a8d3a1f609aeff632f32db.svg",
+    "index.html": "/robot-factory/index.html",
+    "main.e1150b44.css.map": "/robot-factory/static/css/main.e1150b44.css.map",
+    "main.bf8571c1.js.map": "/robot-factory/static/js/main.bf8571c1.js.map",
+    "787.d437d6c3.chunk.js.map": "/robot-factory/static/js/787.d437d6c3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e1150b44.css",
+    "static/js/main.bf8571c1.js"
+  ]
+}
