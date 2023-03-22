@@ -1,0 +1,44 @@
+@use '../base/breakpoint' as *;
+
+// Set the number of columns and the gutter width for each screen size
+$mobileColumns: 2;
+$tabletColumns: 3;
+$desktopColumns: 4;
+$largeDesktopColumns: 5;
+
+$gutterWidth: 10px;
+
+// Calculate the column width for each screen size
+$mobileColumnWidth: calc(100% / $mobileColumns);
+$tabletColumnWidth: calc(100% / $tabletColumns);
+$desktopColumnWidth: calc(100% / $desktopColumns);
+$largeDesktopColumnWidth: calc(100% / $largeDesktopColumns);
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0px -10px;
+}
+
+// Define the column classes for each screen size
+.col-width {
+  flex: 0 0 $mobileColumnWidth;
+  max-width: $mobileColumnWidth;
+  padding: 0 $gutterWidth;
+
+  @include media-breakpoint-up('md') {
+    flex: 0 0 $tabletColumnWidth;
+    max-width: $tabletColumnWidth;
+  }
+
+  @include media-breakpoint-up('lg') {
+    flex: 0 0 $desktopColumnWidth;
+    max-width: $desktopColumnWidth;
+  }
+
+  @include media-breakpoint-up('xl') {
+    flex: 0 0 $largeDesktopColumnWidth;
+    max-width: $largeDesktopColumnWidth;
+  }
+}

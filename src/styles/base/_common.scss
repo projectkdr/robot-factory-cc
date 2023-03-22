@@ -1,0 +1,26 @@
+@use '../base/breakpoint' as *;
+@use '../base/color' as *;
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+
+  @include media-breakpoint-up('sm') {
+    width: 540px;
+  }
+
+  @include media-breakpoint-up('md') {
+    width: 720px;
+  }
+
+  @include media-breakpoint-up('lg') {
+    width: 960px;
+  }
+
+  @include media-breakpoint-up('xl') {
+    width: 1140px;
+  }
+}

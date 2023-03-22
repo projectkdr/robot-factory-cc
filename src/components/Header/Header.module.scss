@@ -1,0 +1,113 @@
+@use '../../styles/base/color' as *;
+
+.header {
+  background-color: $primary-color;
+  display: flex;
+  padding: 20px 0px;
+}
+
+.shipment {
+  display: inline-block;
+  position: relative;
+  width: auto;
+
+  &.has_shipment {
+    &:hover {
+      + .list {
+        visibility: visible;
+      }
+    }
+  }
+
+  &__icon {
+    height: 40px;
+    width: 40px;
+  }
+
+  &__badge {
+    position: absolute;
+    top: -4px;
+    left: 24px;
+    border-radius: 50%;
+    min-width: 12px;
+    line-height: 1.2em;
+    padding: 0 5px;
+    text-align: center;
+    height: auto;
+    border-color: $header-badge-color;
+    background-color: $header-badge-bg-color;
+  }
+}
+
+.list {
+  visibility: hidden;
+  display: block;
+  background: $header-list-bg-color;
+  box-shadow: 0px 0px 10px 0px $header-list-box-shadow-color;
+  position: absolute;
+  max-height: 198px;
+  width: 200px;
+  overflow: auto;
+  padding: 8px;
+  z-index: 10;
+
+  &:hover {
+    visibility: visible;
+  }
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  padding: 4px;
+
+  &__image {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+  }
+
+  &__name {
+    margin-right: auto;
+  }
+
+  &__removebtn {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+
+    &:hover {
+      path {
+        fill: $header-remove-btn-hover-color;
+      }
+    }
+  }
+}
+
+.send_shipment {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 6px 12px;
+  font-size: 16px;
+  line-height: 1.5;
+  border-radius: 4px;
+  transition: all 0.15s;
+  cursor: pointer;
+  color: $header-send-btn-color;
+  background-color: $header-send-btn-bg-color;
+  border-color: $header-send-btn-border-color;
+
+  &:hover {
+    color: $header-send-btn-hover-color;
+    background-color: $header-send-btn-hover-bg-color;
+    border-color: $header-send-btn-hover-border-color;
+  }
+
+  &:active {
+    box-shadow: 0 0 0 4px $header-send-btn-active-box-shadow-color;
+  }
+}

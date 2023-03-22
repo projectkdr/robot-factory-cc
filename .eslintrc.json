@@ -1,0 +1,16 @@
+{
+  "env": {
+    "jest": true
+  },
+  "extends": [
+    "plugin:testing-library/recommended"
+  ],
+  "plugins": [
+    "testing-library"
+  ],
+  "rules": {
+    "testing-library/no-render-in-setup": "off",
+    "testing-library/no-node-access": "off",
+    "testing-library/no-container": "off"
+  }
+}

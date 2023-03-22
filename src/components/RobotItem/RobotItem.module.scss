@@ -1,0 +1,134 @@
+@use '../../styles/base/breakpoint' as *;
+@use '../../styles/base/color' as *;
+
+.container {
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 10px 0px $ri-container-box-shadow-color;
+  cursor: pointer;
+  position: relative;
+
+  &:hover {
+    .addToShipment {
+      opacity: 1;
+    }
+  }
+}
+
+.image_wrapper {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.id {
+  text-transform: uppercase;
+  background: $ri-id-bg-color;
+  text-align: center;
+  color: $ri-id-text-color;
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include media-breakpoint-up('md') {
+    height: 54px;
+    width: 54px;
+  }
+}
+
+.details {
+  background-color: $white;
+  padding: 8px;
+}
+
+.name {
+  border-left: 4px solid $secondary-color;
+  color: $ri-name-text-color;
+  font-size: 15px;
+  line-height: normal;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding-left: 8px;
+  margin-bottom: 8px;
+}
+
+.colour {
+  font-size: 18px;
+  line-height: 1.44;
+  text-transform: capitalize;
+  margin-bottom: 8px;
+}
+
+.rotor {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+
+  svg {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+  }
+
+  span {
+    font-size: 15px;
+    line-height: 1.47;
+  }
+}
+
+.configurations {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 12px;
+
+  svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.addToShipment {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $ri-add-ship-btn-bg-overlay;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.3s;
+
+  &__button {
+    border-radius: 24.5px;
+    text-decoration: none;
+    color: $ri-add-ship-btn-color;
+    padding: 11px 34px;
+    border: 1px solid $ri-add-ship-btn-border-color;
+    background-color: $ri-add-ship-btn-bg-color;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $ri-add-ship-btn-hover-bg-color;
+      color: $ri-add-ship-btn-hover-color;
+    }
+
+    &:active {
+      box-shadow: 0 0 0 4px $ri-add-ship-btn-active-box-shadow-color;
+    }
+  }
+}

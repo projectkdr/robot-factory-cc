@@ -1,0 +1,41 @@
+
+// Common Color
+$white: #ffffff;
+$black: #222222;
+$primary-color: #7fd2e9;
+$secondary-color: #0071b8;
+$scrollbar-color: #d9d9d9;
+$scrollbar-bg-color: #f3f2f1;
+$scrollbar-border-color: #edebe9;
+
+// Header
+$header-badge-color: #e886b5;
+$header-badge-bg-color:  $white;
+$header-remove-btn-hover-color: #e20000;
+$header-list-bg-color: $white;
+$header-list-box-shadow-color: rgba(0, 0, 0, 0.1);
+$header-send-btn-color: $black;
+$header-send-btn-bg-color: #e886b5;
+$header-send-btn-border-color: #e886b5;
+$header-send-btn-hover-color: $white;
+$header-send-btn-hover-bg-color: #e266a1;
+$header-send-btn-hover-border-color: #e05b9b;
+$header-send-btn-active-box-shadow-color: rgba(202, 119, 160, 0.5);
+
+// Filter 
+$filter-tab-bg-color: #f5f5f5;
+
+
+// Robot Item
+$ri-container-box-shadow-color: rgba(0, 0, 0, 0.1);
+$ri-id-bg-color: #e886b5;
+$ri-id-text-color: $black;
+$ri-name-text-color: $black;
+$ri-rotor-color: #666666;
+$ri-add-ship-btn-bg-overlay: rgba(0, 0, 0, 0.3);
+$ri-add-ship-btn-bg-color: $primary-color;
+$ri-add-ship-btn-border-color: $black;
+$ri-add-ship-btn-color: $black;
+$ri-add-ship-btn-hover-bg-color: $black;
+$ri-add-ship-btn-hover-color: $white;
+$ri-add-ship-btn-active-box-shadow-color: rgba(0,113,184,.25);
